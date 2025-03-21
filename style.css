@@ -1,0 +1,32 @@
+/* Asegurar que no haya márgenes ni padding en la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hacer que el video ocupe toda la pantalla */
+#video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Para que el contenido quede por encima */
+}
+
+/* Estilos del contenido */
+.contenido {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3); /* Un fondo oscuro semitransparente para mejorar la legibilidad */
+}
