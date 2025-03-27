@@ -19,18 +19,42 @@
 .contenido {
     position: relative;
     z-index: 1;
-    color: white;
+    color: rgb(235, 221, 27);
     text-align: center;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.3); 
+    height: 15vh;
+    width: 55vh;
 }
 
 .greatword{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: larger;
+    font-size: 400%;
+    text-shadow: 2px 2px 4px white;
+}
+
+.logostand{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;    
+    top: 520px;
+}
+
+.logo{
+    width: 180px;
+    margin: 30px;
+
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    transition: all .6s;
+}
+
+.logo:active{
+    
 }
